@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Accessible Form UI</title>
+</head>
+<body>
+    <div class="main">
+        <div class="form">
+            <form action="#" method="post">
+                <div class="form1">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" placeholder="What should we call you?" required aria-required="true">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required aria-required="true"> 
+                    </div>
+                </div>
+                <div class="form2">            
+                    <div class="form-group">
+                        <label for="Password">Password</label>
+                        <input type="password" aria-hidden="true" id="myInput1" name="password" placeholder="xxxxxxxx" required minlength="8" aria-required="true" maxlength="8"><span id="togglePassword1" class="eye-icon" onclick="myFunction()"><img src="Img/icon/eye-off-outline.svg" alt="eye-icon"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="confirm-password">Confirm Password</label>
+                        <input type="password" id="myInput2" placeholder="xxxxxxxx" name="confirm-password" required aria-required="true" maxlength="8"><span id="togglePassword2" class="eye-icon" onclick="myFunction1()"><img src="Img/icon/eye-off-outline.svg" alt="eye-icon"></span>
+                    </div>
+                    <button type="submit">Update Profile</button>
+                </div>
+            </form>
+        </div>
+        <div class="profile-completion">
+            <div class="progress-bar" data-percentage="65"></div>
+            <p class="judul">Profile Completeness</p>
+            <div class="list">
+                <p class="strikethrough1">Create Account</p>
+                <p class="strikethrough2">Update Roadmap Progress</p>
+                <p class="strikethrough3"> Setup public Profile  </p>
+                <p>Complete your first project</p> 
+                <p>Invite your Friends</p>
+            </div> 
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
